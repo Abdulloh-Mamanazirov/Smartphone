@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Smartphone</title>
+  </head>
+  <body>
+    <div class="phone">
+      <div class="black"></div>
+      <div class="powerBtn"></div>
+      <div class="volumeUp"></div>
+      <div class="volumeDown"></div>
+
+      <div class="volum">
+        <div class="volume">
+          <i
+            class="fa fa-volume-off"
+            style="color: #0084ff"
+            aria-hidden="true"
+          ></i
+          ><input type="range" id="range" />
+        </div>
+      </div>
+
+      <div class="phone-top">
+        <div class="dots"></div>
+        <div class="speaker"></div>
+        <div class="camera"></div>
+      </div>
+      <div class="phone-bottom">
+        <div class="recents"></div>
+        <div class="home"></div>
+        <div class="back"></div>
+      </div>
+      <div class="topMenu">
+        <h2 class="oclock"></h2>
+        <span class="battery"
+          ><sup>7G</sup><i class="fa-solid fa-signal"></i>
+          <span id="battery"></span>
+          <i class="batarya fa-solid" style="color: lime"></i
+        ></span>
+      </div>
+      <div id="lockScreen">
+        <h2 class="clock"></h2>
+        <div class="date">
+          <span id="day">Thursday</span>, <span id="month">December</span>
+          <span id="date">20</span>
+        </div>
+        <div class="notifications">
+          <i class="fa-brands fa-solid fa-instagram"></i>
+          <i class="fa-brands fa-solid fa-instagram"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="apps">
+          <i id="flashlight" class="fa-solid fa-lightbulb"></i>
+          <i id="unlocker" class="fa fa-lock" aria-hidden="true"></i>
+          <i id="cam" class="fa-solid fa-camera"></i>
+        </div>
+      </div>
+      <div id="mainScreen">
+        <div class="widget">
+          <h2 class="clock"></h2>
+          <div class="weather">
+            <i class="fa-solid fa-sun" style="color: gold"></i> 25&deg;C
+          </div>
+        </div>
+        <div class="apps">
+          <img id="google" src="./images/google.png" alt="app" width="75" />
+          <img
+            id="instagram"
+            src="./images/instagram.png"
+            alt="app"
+            width="75"
+          />
+          <img id="meet" src="./images/meetme.png" alt="app" width="75" />
+          <img id="notes" src="./images/notes.png" alt="app" width="75" />
+          <img id="photos" src="./images/photos.png" alt="app" width="75" />
+          <img id="telegram" src="./images/telegram.png" alt="app" width="75" />
+          <img id="twitter" src="./images/twitter.png" alt="app" width="75" />
+          <img id="weather" src="./images/weather.png" alt="app" width="75" />
+          <span class="bottom-apps">
+            <img
+              id="music"
+              src="./images/music-store-app.png"
+              alt="app"
+              width="80"
+            />
+            <img
+              id="sms"
+              src="./images/app.png"
+              alt="app"
+              width="80"
+              height="75"
+            />
+            <img id="call" src="./images/video.png" alt="app" width="80" />
+            <img
+              id="camera"
+              src="./images/camera.png"
+              alt="app"
+              width="70"
+              height="70"
+            />
+          </span>
+        </div>
+      </div>
+      <div id="callScreen">
+        <div class="callTop">
+          <h6></h6>
+          <i class="fa fa-bars"></i>
+        </div>
+        <div id="typedNumber"></div>
+        <div class="numbers">
+          <span class="num" id="num1">1</span>
+          <span class="num" id="num2">2</span>
+          <span class="num" id="num3">3</span>
+          <span class="num" id="num4">4</span>
+          <span class="num" id="num5">5</span>
+          <span class="num" id="num6">6</span>
+          <span class="num" id="num7">7</span>
+          <span class="num" id="num8">8</span>
+          <span class="num" id="num9">9</span>
+          <span class="num" id="num*">*</span>
+          <span class="num" id="num0">0</span>
+          <span class="num" id="num#">#</span>
+          <span class="num" id="callBtn"
+            ><i class="fa fa-phone" aria-hidden="true"></i
+          ></span>
+          <span class="num" id="eraseBtn"
+            ><i class="fa fa-backward" aria-hidden="true"></i
+          ></span>
+        </div>
+      </div>
+      <div id="photosScreen">
+        <div class="photosTop">
+          <h3>Photos</h3>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="images">
+          <img src="https://picsum.photos/id/11/120" alt="" />
+          <img src="https://picsum.photos/id/12/120" alt="" />
+          <img src="https://picsum.photos/id/14/120" alt="" />
+          <img src="https://picsum.photos/id/13/120" alt="" />
+          <img src="https://picsum.photos/id/15/120" alt="" />
+          <img src="https://picsum.photos/id/16/120" alt="" />
+          <img src="https://picsum.photos/id/17/120" alt="" />
+          <img src="https://picsum.photos/id/18/120" alt="" />
+          <img src="https://picsum.photos/id/19/120" alt="" />
+          <img src="https://picsum.photos/id/20/120" alt="" />
+          <img src="https://picsum.photos/id/21/120" alt="" />
+          <img src="https://picsum.photos/id/22/120" alt="" />
+          <img src="https://picsum.photos/id/23/120" alt="" />
+          <img src="https://picsum.photos/id/24/120" alt="" />
+          <img src="https://picsum.photos/id/25/120" alt="" />
+          <img src="https://picsum.photos/id/26/120" alt="" />
+          <img src="https://picsum.photos/id/27/120" alt="" />
+          <img src="https://picsum.photos/id/28/120" alt="" />
+          <img src="https://picsum.photos/id/29/120" alt="" />
+          <img src="https://picsum.photos/id/30/120" alt="" />
+          <img src="https://picsum.photos/id/31/120" alt="" />
+          <img src="https://picsum.photos/id/32/120" alt="" />
+          <img src="https://picsum.photos/id/33/120" alt="" />
+          <img src="https://picsum.photos/id/34/120" alt="" />
+        </div>
+      </div>
+      <div id="musicScreen">
+        <div class="musicTop">
+          <h3>Music <i class="fa fa-music" aria-hidden="true"></i></h3>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="musicList">
+          <ol>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+            <li>
+              <span style="font-weight: 700">Sherali Jo'rayev</span> - Birinchi
+              muhabbatim
+            </li>
+          </ol>
+        </div>
+        <div class="musicPlayer">
+          <div class="controls">
+            <i class="fa fa-step-backward" aria-hidden="true"></i>
+            <i class="fa fa-pause" aria-hidden="true"></i>
+            <i class="fa fa-step-forward" aria-hidden="true"></i>
+          </div>
+          <div class="duration">
+            <p>Sherali Jo'rayev - Birinchi muhabbatim</p>
+            <div class="musiqa">
+              <span>1:13</span
+              ><input disabled type="range" value="35" id="music" /><span
+                >3:40</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="smsScreen">
+        <div class="smsTop">
+          <h3>Message</h3>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="smsList">
+          <ul>
+            <li>
+              <h4>John Doe</h4>
+              <p>Ok :)</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Hello there, wassup buddy? Can we meet at the .....</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Hey Where are you now?</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>This messaging app is so cool. I liked it.</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>😂😂😂😂</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Ok :)</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Hello there, wassup buddy? Can we meet at the .....</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Hey Where are you now?</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>This messaging app is so cool. I liked it.</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>😂😂😂😂</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Ok :)</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Hello there, wassup buddy? Can we meet at the .....</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>Hey Where are you now?</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>This messaging app is so cool. I liked it.</p>
+            </li>
+            <li>
+              <h4>John Doe</h4>
+              <p>😂😂😂😂</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="phone.js"></script>
+  </body>
+</html>

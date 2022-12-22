@@ -34,9 +34,12 @@ body {
   border-radius: 70px;
   background-image: linear-gradient(120deg, blue, red);
 }
-@media (max-width:440px) {
+@media (max-width:450px) {
+  body{
+    padding: 10px 20px;
+  }
   .phone{
-    width: 420px;
+    width: 430px;
   }
 }
 

@@ -151,6 +151,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: #fff;
+  background-image: radial-gradient(#add9f0 10% , white 50%);
   border-radius: 50%;
 }
 
@@ -165,6 +166,7 @@ body {
   background-color: transparent;
 }
 .recents {
+  cursor: pointer;
   width: 30px;
   height: 17px;
   background-image: repeating-linear-gradient(
@@ -177,6 +179,7 @@ body {
   );
 }
 .home {
+  cursor: pointer;
   width: 100px;
   height: 33px;
   border-radius: 15px;
@@ -184,6 +187,7 @@ body {
   border: 3px solid slateblue;
 }
 .back {
+  cursor: pointer;
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -194,7 +198,7 @@ body {
 #lockScreen {
   user-select: none;
   color: #fff;
-  width: 100%;
+  width: 100.2%;
   height: 96%;
   display: flex;
   align-items: center;
@@ -304,7 +308,7 @@ body {
 
 #callScreen {
   padding: 10px 20px;
-  width: 100%;
+  width: 100.2%;
   height: 96%;
   display: flex;
   align-items: center;
@@ -473,7 +477,7 @@ body {
 
 #musicScreen {
   padding: 10px 0 0 0;
-  width: 100%;
+  width: 100.2%;
   height: 96%;
   display: flex;
   flex-direction: column;
@@ -539,7 +543,7 @@ body {
 
 #smsScreen {
   padding: 10px 0 0 0;
-  width: 100%;
+  width: 100.2%;
   height: 96%;
   display: flex;
   flex-direction: column;
@@ -581,6 +585,8 @@ body {
 
 /********************** Camera Screen *************************/
 #cameraScreen{
+  position: relative;
+  /* left: -.3px; */
   background-color: #000;
   width: 100.2%;
   height: 96%;
@@ -610,4 +616,54 @@ body {
   font-size: 95px;
   padding-top: -50px;
   padding-bottom: 20px;
+}
+
+
+/******************** Weather app ********************/
+
+#weatherScreen {
+  padding: 10px 0 0 0;
+  width: 100.2%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  background-image:linear-gradient(-150deg,rgb(0, 110, 255), #fff);
+}
+
+#weatherScreen .weatherTop {
+  user-select: none;
+  padding: 0 20px;
+  color: #000;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#weatherScreen .celcius{
+  display: flex;
+  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 130px 0;
+}
+#weatherScreen .weatherData ul li{
+  font-size: 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#weatherScreen .weatherData ul li .weatherInfromation{
+  font-weight: 600;
+  font-size: 22px;
+}
+#weatherScreen .weatherData ul li:nth-child(even){
+  background-color: #e7e7e7;
 }

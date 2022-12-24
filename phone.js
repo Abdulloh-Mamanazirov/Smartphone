@@ -4,6 +4,7 @@ let mainScreen = document.getElementById("mainScreen");
 let callScreen = document.getElementById("callScreen");
 let photosScreen = document.getElementById("photosScreen");
 let cameraScreen = document.getElementById("cameraScreen");
+let weatherScreen = document.getElementById("weatherScreen");
 
 let powerBtn = document.querySelector(".powerBtn");
 let volumeUp = document.querySelector(".volumeUp");
@@ -119,6 +120,7 @@ homeBtn.addEventListener("click", () => {
     musicScreen.style.display = "none";
     smsScreen.style.display = "none";
     cameraScreen.style.display = "none";
+    weatherScreen.style.display = "none";
     document.querySelector(".black").style.display = "none";
     off = false;
   } else {
@@ -128,6 +130,7 @@ homeBtn.addEventListener("click", () => {
     musicScreen.style.display = "none";
     smsScreen.style.display = "none";
     cameraScreen.style.display = "none";
+    weatherScreen.style.display = "none";
     document.querySelector(".black").style.display = "none";
     off = true;
   }
@@ -165,6 +168,7 @@ photosScreen.style.display = "none";
 musicScreen.style.display = "none";
 smsScreen.style.display = "none";
 cameraScreen.style.display = "none";
+weatherScreen.style.display = "none";
 // document.querySelector(".black").style.display = "none"; /** always */
 
 /* * * * * * * Lock Screen * * * * * */
@@ -439,4 +443,12 @@ document.querySelector("#camFlash").addEventListener("click", () => {
     screen.style.boxShadow = "unset";
     off = true;
   }
+});
+
+
+/********* Weather app *********** */
+
+weather.addEventListener("click", () => {
+  weatherScreen.style.display = "flex";
+  mainScreen.style.display = "none";
 });
